@@ -1,0 +1,78 @@
+p{
+  margin: 0;  
+}
+.mobile-nav-collapsible{
+    padding: 0 2em !important;
+}
+.mobile-nav-sub-materi{
+    padding: 0 2.8em !important;
+}
+
+/*$ setting */
+nav,.footer-copyright,.page-footer{
+    background-color:  #8fd3f4 !important;
+}
+.waves-effect.waves-cyan .waves-ripple {
+    /* The alpha value allows the text and background color
+    of the button to still show through. */
+     background-color: #8fd2f4a2;
+   }
+
+/*$ footer fix bawah */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+/*$ main */
+main{
+    padding: 0em 0;
+}
+/*$ tentang */
+form.masukkan > .masukkan-input {
+    margin-bottom: 0 !important;
+}
+/* $ home */
+.link-ke-materi{
+    margin-right: 0 !important;
+}
+.card-list-materi{
+    margin-top: 2em;
+}
+/* $ materi */
+.materi-img{
+    margin: 1.5em 0 !important;
+}
+.materi-title{
+    font-weight: bold;
+}
+.p-isi-materi{
+    text-indent: 1em;
+    margin-bottom: 1.5em;
+}
+
+
+
+/* ! meng-extends framework */
+.justify-center{
+    display: flex;
+    justify-content: center;
+}
+.justify-center > .col{ /* disable margin yang ada di .col*/
+    margin-left: 0 !important;
+}
+.align-item-center{
+    display: flex;
+    align-items: center;
+}
+.f-column{
+    flex-direction: column !important;
+}
+.pt-2{
+    padding-top: 2em;
+}

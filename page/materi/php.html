@@ -1,0 +1,129 @@
+<div class="row pt-2 justify-center f-column align-item-center">
+    <h4 class="center-align materi-title">
+        Apa itu PHP?
+    </h4>
+</div>
+<div class="row">
+    <div class="divider"></div>
+</div>
+<!-- form -->
+<div class="row justify-center">
+    <div class="col s12 m12 l12 left-align">
+        <p class="p-isi-materi">
+            PHP adalah bahasa pemrograman script server-side yang didesain untuk pengembangan
+            web. Selain itu, PHP juga bisa digunakan sebagai bahasa pemrograman umum (wikipedia). PHP
+            di kembangkan pada tahun 1995 oleh Rasmus Lerdorf, dan sekarang dikelola oleh The PHP
+            Group.
+        </p>
+        <p class="p-isi-materi">
+            PHP disebut bahasa pemrograman server side karena PHP diproses pada komputer
+            server. Hal ini berbeda dibandingkan dengan bahasa pemrograman client-side seperti JavaScript
+            yang diproses pada web browser (client).
+        </p>
+        <p class="p-isi-materi">
+            Pada awalnya PHP merupakan singkatan dari Personal Home Page. Sesuai dengan
+            namanya, PHP digunakan untuk membuat website pribadi. Dalam beberapa tahun
+            perkembangannya, PHP menjelma menjadi bahasa pemrograman web yang powerful dan tidak
+            hanya digunakan untuk membuat halaman web sederhana, tetapi juga website populer yang
+            digunakan oleh jutaan orang seperti wikipedia, wordpress, joomla, dll. Saat ini PHP adalah
+            singkatan dari PHP: Hypertext Preprocessor, sebuah kepanjangan rekursif, yakni permainan kata
+            dimana kepanjangannya terdiri dari singkatan itu sendiri: PHP: Hypertext Preprocessor.
+        </p>
+        <p class="p-isi-materi">
+            PHP dapat digunakan dengan gratis (free) dan bersifat Open Source. PHP dirilis dalam
+            lisensi PHP License, sedikit berbeda dengan lisensi GNU General Public License (GPL) yang
+            biasa digunakan untuk proyek Open Source. Kemudahan dan kepopuleran PHP sudah menjadi
+            standar bagi programmer web di seluruh dunia. Menurut wikipedia pada februari 2014, sekitar
+            82% dari web server di dunia menggunakan PHP. PHP juga menjadi dasar dari aplikasi CMS
+            (Content Management System) populer seperti Joomla, Drupal, dan WordPress. Dapat dilihat
+            dari tampilan di atas bahwa mayoritas website modern saat ini menggunakan PHP.
+        </p>
+        <p class="p-isi-materi">
+            Fungsi PHP dalam Pemrograman Web adalah untuk membuat halaman web, sebenarnya
+            PHP bukanlah bahasa pemrograman yang wajib digunakan. Kita bisa saja membuat website
+            hanya menggunakan HTML saja. Web yang dihasilkan dengan HTML (dan CSS) ini dikenal
+            dengan website statis, dimana konten dan halaman web bersifat tetap. Sebagai perbandingan,
+            website dinamis yang bisa dibuat menggunakan PHP adalah situs web yang bisa menyesuaikan
+
+            tampilan konten tergantung situasi. Website dinamis juga bisa menyimpan data ke dalam
+            database, membuat halaman yang berubah-ubah sesuai input dari user, memproses form, dll.
+        </p>
+        <p class="p-isi-materi">
+            Untuk pembuatan web, kode PHP biasanya di sisipkan ke dalam dokumen HTML.
+            Karena fitur inilah PHP disebut juga sebagai Scripting Language atau bahasa pemrograman
+            script.
+        </p>
+        <p class="p-isi-materi">
+            Sebagai contoh penggunaan PHP, misalkan kita ingin membuat list dari nomor 1 sampai
+            nomor 10. Dengan menggunakan HTML murni, kita bisa membuatnya secara manual seperti
+            kode berikut ini:
+        </p>
+        <pre class="grey-text">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Contoh list dengan HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Daftar Absensi Mahasiswa&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Nama Mahasiswa ke-1&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-2&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-3&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-4&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-5&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-6&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-7&lt;/li&gt;
+
+&lt;li&gt;Nama Mahasiswa ke-8&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-9&lt;/li&gt;
+&lt;li&gt;Nama Mahasiswa ke-10&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <p class="p-isi-materi">
+            Halaman HTML tersebut dapat dibuat dengan mudah dengan cara men-copy-paste tag
+            &lt;li&gt; sebanyak 10 kali dan mengubah sedikit angka-angka no urut di belakangnya. Namun jika
+            yang kita inginkan adalah menambahkan list tersebut menjadi 100 atau 1000 list, cara copy-paste
+            tersebut menjadi tidak efektif.
+        </p>
+
+        <p class="p-isi-materi">
+            Jika menggunakan PHP, kita tinggal membuat perulangan for sebanyak 1000 kali dengan
+            perintah yang lebih singkat seperti berikut ini:
+        </p>
+
+        <pre class="grey-text">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Contoh list dengan PHP&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Daftar Absensi Mahasiswa&lt;/h2&gt;
+&lt;ol&gt;
+&lt;?php
+for ($i= 1; $i &lt;= 1000; $i++)
+
+{
+echo &quot;&lt;li&gt;Nama Mahasiswa ke-$i&lt;/li&gt;&quot;;
+}
+?&gt;
+&lt;/ol
+&lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+
+        <p class="p-isi-materi">
+            Dengan menggunakan kode baris yang bahkan lebih sedikit, kita dapat membuat list
+            tersebut menjadi 1000 kali, bahkan 100.000 kali dengan hanya mengubah sebuah variabel $i.
+        </p>
+        <p class="p-isi-materi">
+            PHP tidak hanya dapat melakukan pengulangan tersebut, masih banyak hal lain yang bisa
+            kita lakukan dengan PHP, seperti menginput data ke database, menghasilkan gambar,
+            menkonversi halaman text menjadi PDF, management cookie dan session.
+        </p>
+    </div>
+</div>

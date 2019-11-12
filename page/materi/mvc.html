@@ -1,0 +1,101 @@
+<div class="row pt-2 justify-center f-column align-item-center">
+    <h4 class="center-align materi-title">
+        Memahami Konsep MVC (Model-View-Controller)
+    </h4>
+</div>
+<div class="row">
+    <div class="divider"></div>
+</div>
+<!-- form -->
+<div class="row justify-center">
+    <div class="col s12 m12 l12 left-align">
+        <p class="p-isi-materi">
+            Konsep arsitektur MVC atau Model-View-Controller, kemungkinan besar adalah istilah yang paling sering
+            disebutkan dalam dunia web-programming beberapa tahun terakhir ini (Pablo Pastor, 2010)[1]. Orang-
+            orang yang bersinggungan secara langsung atau pun tidak langsung dengan dunia pembangunan aplikasi
+            berbasis web pasti pernah mendengar istilah MVC, dikarenakan kepopuleran dan urgensitas-nya.
+        </p>
+
+        <p class="p-isi-materi">
+            Model: Bertugas untuk mengatur, menyiapkan, memanipulasi dan mengorganisasikan data (dari
+            database) sesuai dengan instruksi dari controller.</br> <br>
+            View: Bertugas untuk menyajikan informasi (yang mudah dimengerti) kepada user sesuai dengan
+            instruksi dari controller.</br> <br>
+            Controller: Bertugas untuk mengatur apa yang harus dilakukan model, dan view mana yang harus
+            ditampilkan berdasarkan permintaan dari user. Namun, terkadang permintaan dari user tidak selalu
+            memerlukan aksi dari model. Misalnya seperti menampilkan halaman form untuk registrasi user.
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas iste nulla dolor reprehenderit iusto modi
+            cum exercitationem, aspernatur sint maiores assumenda eum laborum, asperiores dignissimos harum provident
+            ducimus voluptatem quia.
+        </p>
+
+        <h5>Contoh Kasus</h5>
+        <p class="p-isi-materi">
+            Ketika anda memasuki perpustakaan kemungkinan anda diminta untuk mengisi buku tamu. Kebetulan
+            buku tamu di perpustakaan yang anda kunjungi menggunakan aplikasi web. Jadi di sana sudah terdapat
+            satu komputer, di mana setiap pengunjung perpustakaan harus melewati dan mengisi datanya melalui
+            komputer tersebut.
+
+            Ketika anda melihat layar komputer, di sana ditampilkan form untuk mengisi data diri pengunjung. Kita
+            bisa simpulkan bahwa di sini, browser (sebagai client) meminta aksi kepada server (yang ditangani oleh
+            controller) untuk menampilkan halaman form input data. Lalu controller memutuskan dan mengerti
+            bahwasanya ia hanya perlu menampilkan view. Maka controller memanggil dan mengembalikan view
+            (atau halaman) yang diminta.
+        </p>
+        <p class="p-isi-materi">
+            Anda kemudian mengisi data. Lalu menekan tombol submit. Di sini browser (sebagai client)
+            mengirimkan data anda kepada server. Data itu ditangkap oleh controller dan controller tahu apa yang
+            harus dia lakukan. Yaitu memanggil model dan memberi data tersebut untuk kemudian disimpan (oleh
+            model) ke dalam database. Setelah proses penyimpanan selesai, controller memanggil dan
+            mengembalikan view kepada user sebagai informasi bahwa data telah masuk.
+        </p>
+        <p>
+            Jika ada pengunjung baru, maka kembali ke step 1.
+        </p>
+        <p>
+            Framework yang Menggunakan Konsep MVC
+        </p>
+        <p>
+            Untuk framework PHP, ada cukup banyak dan hampir semuanya menggunakan konsep MVC:
+        </p>
+        <div class="row">
+            <div class="col s12 center-align">
+                <ul class="collection">
+                    <li class="collection-item">Laravel</li>
+                    <li class="collection-item">Symfoni</li>
+                    <li class="collection-item">CakePHP</li>
+                    <li class="collection-item">Zend</li>
+                    <li class="collection-item">Codeigniter</li>
+                    <li class="collection-item">dll</li>
+                </ul>
+            </div>
+        </div>
+        <p>Untuk framework Python di antaranya:</p>
+        <div class="row">
+            <div class="col s12 center-align">
+                <ul class="collection">
+                    <li class="collection-item">Django</li>
+                    <li class="collection-item">Turbogears2</li>
+                    <li class="collection-item">Watson-Framework</li>
+                    <li class="collection-item">dll</li>
+                </ul>
+            </div>
+        </div>
+        <p>Untuk framework Nodejs di antaranya:</p>
+        <div class="row">
+            <div class="col s12 center-align">
+                <ul class="collection">
+                    <li class="collection-item">Express</li>
+                    <li class="collection-item">Adonis</li>
+                    <li class="collection-item">Sails.js</li>
+                    <li class="collection-item">Total.js</li>
+                    <li class="collection-item">Mean.js</li>
+                    <li class="collection-item">Mojito</li>
+                    <li class="collection-item">dll</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
