@@ -1,4 +1,4 @@
-# Ringma
+# Ringma  (Ringkasan Materi)
 A super simple Mobile Progressive Web App for my school project.
 Basicly im **cheating** on this school project 
 bicause its supouse to be an android native app project. 
